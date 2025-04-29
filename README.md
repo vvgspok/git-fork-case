@@ -1,36 +1,38 @@
+## Описание
+
 Данный файл содержит тесты для класса BooksCollector, который отвечает за управление коллекцией книг. Используется фреймворк pytest для автоматизации тестирования. 
 
 ## Тесты
 
-### testaddnewbooksuccess
+### test_add_new_book_success
 Тест проверяет добавление новой книги в коллекцию. В зависимости от длины названия книги проверяет, может ли книга быть добавлена.
 
-### testaddnewbookaddwiththesamename
+### test_add_new_book_add_with_the_same_name
 Тест проверяет, что книга с тем же названием не может быть добавлена повторно в коллекцию.
 
-### testsetbookgenresuccess
+### test_set_book_genre_success
 Тест проверяет установку жанра для книги. Проверяет, что жанр устанавливается правильно в разных ситуациях.
 
-### testgetbookgenresuccess
+### test_get_book_genre_success
 Тест проверяет, что можно получить жанр книги после его установки.
 
-### testgetbookswithspecificgenresuccess
+### test_get_books_with_specific_genre_success
 Тест проверяет, что можно получить список книг с определённым жанром из коллекции.
 
-### testgetbooksgenresuccess
+### test_get_books_genre_success
 Тест проверяет, что можно получить список всех жанров книг в коллекции.
 
-### testgetbooksforchildrensuccess
+### test_get_books_for_children_success
 Тест проверяет, что книга, отнесённая к определённому жанру, не попадает в список книг для детей в случае соблюдения условий.
 
-### testgetbooksforchildrenfail
+### test_get_books_for_children_fail
 Тест проверяет, что книга, отнесённая к определённому жанру, не должна относиться к книгам для детей, если это условие нарушается.
 
-### testaddbookinfavoritessuccess
+### test_add_book_in_favorites_success
 Тест проверяет добавление книги в избранное. Убедится, что количество избранных книг изменяется в зависимости от того, добавлена ли книга из списка.
 
-### testaddbookinfavoriteswiththesamename
+### test_add_book_in_favorites_with_the_same_name
 Тест проверяет, что книга с тем же названием не может быть добавлена в избранное повторно.
 
-### testdeletebookfromfavoritessuccess
+### test_delete_book_from_favorites_success
 Тест проверяет удаление книги из избранного и изменение количества избранных книг после удаления.
